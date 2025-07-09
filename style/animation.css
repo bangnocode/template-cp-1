@@ -34,17 +34,17 @@
 .appear-bottom-to-top{
     animation: appear-bottom-to-top linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 0%;
+    animation-range: entry 0% cover 5%;
 }
 
 .appear-right-to-left{
     animation: appear-right-to-left linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 0%;
+    animation-range: entry 0% cover 5%;
 }
 
 .appear-left-to-right{
     animation: appear-left-to-right linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 0%;
+    animation-range: entry 0% cover 5%;
 }
