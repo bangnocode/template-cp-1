@@ -40,11 +40,11 @@
 .appear-right-to-left{
     animation: appear-right-to-left linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 30%;
+    animation-range: entry 0% cover 10%;
 }
 
 .appear-left-to-right{
     animation: appear-left-to-right linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 30%;
+    animation-range: entry 0% cover 10%;
 }
