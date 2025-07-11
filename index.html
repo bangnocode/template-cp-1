@@ -225,6 +225,23 @@
     AOS.init({
       //once: true, // animasi hanya terjadi sekali
     });
+    // Ambil elemen toggle dan menu
+    const toggleButton = document.querySelector('[data-collapse-toggle]');
+    const navMenu = document.getElementById('navbar-default');
+
+    // Toggle menu saat tombol diklik
+    toggleButton.addEventListener('click', function (e) {
+      e.stopPropagation();
+      navMenu.classList.toggle('hidden');
+    });
+
+    // Tutup menu jika klik di luar
+    document.addEventListener('click', function (e) {
+      const isClickInside = navMenu.contains(e.target) || toggleButton.contains(e.target);
+      if (!isClickInside && !navMenu.classList.contains('hidden')) {
+        navMenu.classList.add('hidden');
+      }
+    });
   </script>
 
 </body>
