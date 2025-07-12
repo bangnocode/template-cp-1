@@ -1,0 +1,10 @@
+@media only screen and (min-width: 768px) {
+  .md-arrow{
+    width: 1.65rem;
+    height: 1.65rem;
+  }
+
+  .md-text-xl{
+    font-size: 1.2rem;
+  }
+}

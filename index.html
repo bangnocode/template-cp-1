@@ -7,8 +7,15 @@
   <title>Template Trino</title>
   <link rel="icon" href="img/logo.png">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="style/custom-class.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+
+  <style>
+    .font-clr-blue {
+      color: blue;
+    }
+  </style>
 </head>
 
 <body style="scroll-behavior: smooth;">
@@ -57,22 +64,23 @@
 
 
 
-    <div id="home" class="h-screen w-full flex items-center justify-center !bg-[url(./img/background.png)] text-white">
+    <div id="home" class="h-screen w-full flex items-center justify-center !bg-[url(./img/background.png)] text-white bg-no-repeat bg-cover">
       <div class="container-banner text-center">
-        <h1 class="text-2xl font-bold mb-6 pt-24">Desain Cerdas <br> Solusi Digital Berkualitas</h1>
-        <h2 class="text-base font-medium mx-12 mb-16">Gunakan Jasa Kami Untuk Mendapatkan Bermacam Desain Yang Keren
+        <h1 class="text-2xl font-bold mb-6 px-6 pt-24 md:text-4xl">Desain Cerdas <br> Solusi Digital Berkualitas</h1>
+        <h2 class="text-base font-medium mx-12 mb-16 md:text-xl md:mx-16">Gunakan Jasa Kami Untuk Mendapatkan Bermacam Desain
+          Yang Keren
           Untuk Usaha Anda Agar Customer Anda Tertarik</h2>
         <div class="flex justify-center">
           <a href="#layanan-kami"
-            class="!bg-violet-700 border-white border font-medium text-base py-5 px-7 rounded-lg flex items-center gap-4 w-max">Lihat
-            Detail <img src="assets/icon/next.png" alt="Next Icon" class="w-5 invert brightness-0 animate-bounce"></a>
+            class="!bg-violet-700 border-white border font-medium text-base py-5 px-7 rounded-lg flex items-center gap-4 w-max md:text-lg">Lihat
+            Detail <img src="assets/icon/next.png" alt="Next Icon" class="w-5 h-5 invert brightness-0 animate-bounce md-arrow"></a>
         </div>
       </div>
     </div>
     <br id="layanan-kami">
-    <div class="p-10">
-      <h1 class="text-center font-bold text-3xl mb-3">Layanan Kami</h1>
-      <h2 class="text-center font-medium text-base mb-10">Layanan Jasa Yang kami Sediakan</h2>
+    <div class="p-10 md:px-32">
+      <h1 class="text-center font-bold text-3xl mb-3 md:text-4xl">Layanan Kami</h1>
+      <h2 class="text-center font-medium text-base mb-10 md:text-xl">Layanan Jasa Yang kami Sediakan</h2>
       <div class="container-product flex flex-col gap-y-14">
 
         <!-- PRODUCT 1 -->
@@ -82,68 +90,21 @@
             <h1 class="text-2xl"><b>Desain Logo</b></h1>
           </div>
           <div class="container-detail-product p-8 text-lg font-medium rounded-b-lg">
-            <h1 class="font-bold mb-3 text-xl">Detail :</h1>
-            <h1 class="flex"><img src="assets/icon/check.png" alt="Checklist" class="w-6 h-6">Desain 3
+            <h1 class="font-bold mb-3 text-lg">Detail :</h1>
+            <h1 class="flex text-base"><img src="assets/icon/check.png" alt="Checklist" class="w-6 h-6">Desain 3
               Konsep Awal</h1>
-            <h1 class="flex"><img src="assets/icon/check.png" alt="Checklist" class="w-6 h-6">Brand color
+            <h1 class="flex text-base"><img src="assets/icon/check.png" alt="Checklist" class="w-6 h-6">Brand color
               palette</h1>
-            <h1 class="flex"><img src="assets/icon/check.png" alt="Checklist" class="w-6 h-6">Typography
+            <h1 class="flex text-base"><img src="assets/icon/check.png" alt="Checklist" class="w-6 h-6">Typography
               guide</h1>
-            <h1 class="flex"><img src="assets/icon/check.png" alt="Checklist" class="w-6 h-6">Stationery
+            <h1 class="flex text-base"><img src="assets/icon/check.png" alt="Checklist" class="w-6 h-6">Stationery
               mockup</h1>
-            <h1 class="flex"><img src="assets/icon/check.png" alt="Checklist" class="w-6 h-6">File PNG, JPG, Vector
+            <h1 class="flex text-base"><img src="assets/icon/check.png" alt="Checklist" class="w-6 h-6">File PNG, JPG, Vector
               (AI/PDF/SVG)</h1>
           </div>
-          <div class="btn-contact-admin flex justify-center">
-            <a href="#" class="text-white font-semibold flex gap-3 bg-green-700 py-4 px-9 rounded-lg"><img
-                src="assets/icon/whatsapp-white.png" alt="Whatsapp Icon" class="w-6 h-6">Hubungi Admin</a>
-          </div>
-        </div>
-        <!-- CLOSE PRODUCT 1 -->
-
-        <!-- PRODUCT 1 -->
-        <div class="card-product bg-white rounded-xl border-2 border-fuchsia-800 pb-8" data-aos="fade-up"
-          data-aos-offset="25">
-          <div class="container-name-product bg-fuchsia-800 px-8 py-6 rounded-t-lg text-center text-white">
-            <h1 class="text-2xl"><b>Desain Sosial Media</b></h1>
-          </div>
-          <div class="container-detail-product p-8 text-lg font-medium rounded-b-lg">
-            <h1 class="font-bold mb-3 text-xl">Detail :</h1>
-            <h1 class="flex"><img src="assets/icon/check.png" alt="Checklist" class="w-6 h-6">Desain feed Instagram</h1>
-            <h1 class="flex"><img src="assets/icon/check.png" alt="Checklist" class="w-6 h-6">Desain story</h1>
-            <h1 class="flex"><img src="assets/icon/check.png" alt="Checklist" class="w-6 h-6">Highlight cover icon</h1>
-            <h1 class="flex"><img src="assets/icon/check.png" alt="Checklist" class="w-6 h-6">File PNG, JPG, Vector
-              (AI/PDF/SVG)</h1>
-          </div>
-          <div class="btn-contact-admin flex justify-center">
-            <a href="#" class="text-white font-semibold flex gap-3 bg-green-700 py-4 px-9 rounded-lg"><img
-                src="assets/icon/whatsapp-white.png" alt="Whatsapp Icon" class="w-6 h-6">Hubungi Admin</a>
-          </div>
-        </div>
-        <!-- CLOSE PRODUCT 1 -->
-
-        <!-- PRODUCT 1 -->
-        <div class="card-product bg-white rounded-xl border-2 border-purple-900 pb-8" data-aos="fade-up"
-          data-aos-offset="25">
-          <div class="container-name-product bg-purple-900 px-8 py-6 rounded-t-lg text-center text-white">
-            <h1 class="text-2xl"><b>Desain Kemasan Produk</b></h1>
-          </div>
-          <div class="container-detail-product p-8 text-lg font-medium rounded-b-lg">
-            <h1 class="font-bold mb-3 text-xl">Detail :</h1>
-            <h1 class="flex"><img src="assets/icon/check.png" alt="Checklist" class="w-6 h-6">Desain kemasan semua jenis
-              produk (Botol, Box, Stiker)</h1>
-            <h1 class="flex"><img src="assets/icon/check.png" alt="Checklist" class="w-6 h-6">2D & 3D mockup tampilan
-              kemasan</h1>
-            <h1 class="flex"><img src="assets/icon/check.png" alt="Checklist" class="w-6 h-6">File siap cetak
-              (print-ready, CMYK, resolusi tinggi)</h1>
-            <h1 class="flex"><img src="assets/icon/check.png" alt="Checklist" class="w-6 h-6">Ukuran disesuaikan dengan
-              ukuran fisik produk</h1>
-            <h1 class="flex"><img src="assets/icon/check.png" alt="Checklist" class="w-6 h-6">File PNG, JPG, Vector
-              (AI/PDF/SVG)</h1>
-          </div>
-          <div class="btn-contact-admin flex justify-center">
-            <a href="#" class="text-white font-semibold flex gap-3 bg-green-700 py-4 px-9 rounded-lg"><img
-                src="assets/icon/whatsapp-white.png" alt="Whatsapp Icon" class="w-6 h-6">Hubungi Admin</a>
+          <div class="btn-contact-admin flex justify-center px-12">
+            <a href="#" class="text-white font-semibold flex gap-3 bg-green-700 py-4 px-9 rounded-lg justify-center items-center"><img
+                src="assets/icon/whatsapp-white.png" alt="Whatsapp Icon" class="w-5 h-5">Hubungi Admin</a>
           </div>
         </div>
         <!-- CLOSE PRODUCT 1 -->
@@ -151,10 +112,10 @@
       </div>
     </div>
     <br id="tentang-kami">
-    <div class="px-10 py-20 !bg-[url(./img/background.png)] bg-right">
+    <div class="px-10 py-20 !bg-[url(./img/background.png)] bg-no-repeat bg-cover bg-right md:px-24">
       <div class="container-about-us text-white">
-        <h1 class="mb-8 font-bold text-3xl text-center">Tentang Kami</h1>
-        <h1 class="text-lg mb-8" data-aos="fade-right" data-aos-offset="25"><span class="font-bold">Savana Digital
+        <h1 class="mb-8 font-bold text-3xl text-center md:text-4xl">Tentang Kami</h1>
+        <h1 class="text-base mb-8 md:text-xl" data-aos="fade-right" data-aos-offset="25"><span class="font-bold">Savana Digital
             Studio</span> adalah
           perusahaan kreatif yang
           berfokus
@@ -162,7 +123,7 @@
           grafis
           profesional dan branding visual untuk UMKM, startup, hingga perusahaan menengah. Kami
           membantu klien membangun identitas visual yang kuat dan kehadiran online yang efektif.</h1>
-        <div class="grid grid-cols-2 gap-3">
+        <div class="grid grid-cols-2 gap-3 md:px-12">
           <img src="img/kantor-kecil.png" alt="Kantor" class="w-full" data-aos="fade-right" data-aos-offset="25">
           <img src="img/kantor-kecil.png" alt="Kantor" class="w-full" data-aos="fade-right" data-aos-offset="25">
           <img src="img/kantor-kecil.png" alt="Kantor" class="w-full" data-aos="fade-right" data-aos-offset="25">
@@ -172,21 +133,21 @@
     </div>
 
     <div class="p-10 pt-20">
-      <h1 class="font-bold text-3xl mb-3 text-center">Pendapat Mereka</h1>
-      <h2 class="font-medium text-base mb-10 text-center">Pendapat Mereka Yang Sudah Menggunakan Layanan Jasa Kami</h2>
+      <h1 class="font-bold text-3xl mb-3 text-center md:text-4xl">Pendapat Mereka</h1>
+      <h2 class="font-medium text-base mb-10 text-center md:text-xl md:px-32">Pendapat Mereka Yang Sudah Menggunakan Layanan Jasa Kami</h2>
 
-      <div class="flex-col flex gap-y-8">
+      <div class="flex-col flex gap-y-8 md:px-20">
 
         <div class="review-1 border rounded-lg p-4 items-center" data-aos="fade-up-right" data-aos-offset="25">
           <div class="mb-4">
-            <h1 class="font-medium">
+            <h1 class="font-medium text-base">
               "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, odit porro autem reprehenderit"
             </h1>
           </div>
           <div class="flex">
             <img src="img/icon-user.png" alt="Icon User" class="w-10 rounded-full h-10">
             <div class="">
-              <h1 class="ms-1 font-bold">Username1</h1>
+              <h1 class="ms-1 font-bold text-base">Username1</h1>
               <div class="bintang-rating flex">
                 <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor" viewBox="0 0 22 20">
@@ -218,110 +179,29 @@
           </div>
         </div>
 
-        <div class="review-1 border rounded-lg p-4 items-center" data-aos="fade-up-right" data-aos-offset="25">
-          <div class="mb-4">
-            <h1 class="font-medium">
-              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, odit porro autem reprehenderit"
-            </h1>
-          </div>
-          <div class="flex">
-            <img src="img/icon-user.png" alt="Icon User" class="w-10 rounded-full h-10">
-            <div class="">
-              <h1 class="ms-1 font-bold">Username1</h1>
-              <div class="bintang-rating flex">
-                <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor" viewBox="0 0 22 20">
-                  <path
-                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                </svg>
-                <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor" viewBox="0 0 22 20">
-                  <path
-                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                </svg>
-                <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor" viewBox="0 0 22 20">
-                  <path
-                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                </svg>
-                <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor" viewBox="0 0 22 20">
-                  <path
-                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                </svg>
-                <svg class="w-4 h-4 ms-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor" viewBox="0 0 22 20">
-                  <path
-                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="review-1 border rounded-lg p-4 items-center" data-aos="fade-up-right" data-aos-offset="25">
-          <div class="mb-4">
-            <h1 class="font-medium">
-              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, odit porro autem reprehenderit"
-            </h1>
-          </div>
-          <div class="flex">
-            <img src="img/icon-user.png" alt="Icon User" class="w-10 rounded-full h-10">
-            <div class="">
-              <h1 class="ms-1 font-bold">Username1</h1>
-              <div class="bintang-rating flex">
-                <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor" viewBox="0 0 22 20">
-                  <path
-                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                </svg>
-                <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor" viewBox="0 0 22 20">
-                  <path
-                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                </svg>
-                <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor" viewBox="0 0 22 20">
-                  <path
-                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                </svg>
-                <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor" viewBox="0 0 22 20">
-                  <path
-                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                </svg>
-                <svg class="w-4 h-4 ms-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor" viewBox="0 0 22 20">
-                  <path
-                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
 
       </div>
 
     </div>
 
-    <div class="px-10 py-20" id="kontak">
+    <div class="px-10 py-20 md:px-32" id="kontak">
       <div class="appear-bottom-to-top">
-        <h1 class="text-3xl font-bold text-center mb-4">Ada Pertanyaan?</h1>
-        <h1 class="text-base text-center font-medium mb-4">Hubungi Kontak Admin Yang Tersedia Ada Di Bawah.</h1>
+        <h1 class="text-3xl font-bold text-center mb-4 md:text-4xl">Ada Pertanyaan?</h1>
+        <h1 class="text-base text-center font-medium mb-8 md:text-xl">Hubungi Kontak Admin Yang Tersedia Ada Di Bawah.</h1>
         <a href="#" class="rounded-3xl" data-aos="fade-left" data-aos-offset="25">
-          <div class="container-telp border-2 rounded-3xl p-4 mb-4 flex gap-2 items-center text-base"><img
+          <div class="container-telp border-2 rounded-3xl p-4 mb-4 flex gap-2 items-center text-base md:text-lg"><img
               src="assets/icon/phone-call.png" alt="Phone Call" class="w-5 h-5"> (+62) 812-3456-7890</div>
         </a>
         <a href="#" class="rounded-3xl" data-aos="fade-right" data-aos-offset="25">
-          <div class="container-email border-2 rounded-3xl p-4 mb-4 flex gap-2 items-center text-base"><img
+          <div class="container-email border-2 rounded-3xl p-4 mb-4 flex gap-2 items-center text-base md:text-lg"><img
               src="assets/icon/mail.png" alt="Phone Call" class="w-5 h-5"> hello@savanadigital.id</div>
         </a>
         <a href="#" class="rounded-3xl" data-aos="fade-left" data-aos-offset="25">
-          <div class="container-whatsapp border-2 rounded-3xl p-4 mb-4 flex gap-2 items-center text-base"><img
+          <div class="container-whatsapp border-2 rounded-3xl p-4 mb-4 flex gap-2 items-center text-base md:text-lg"><img
               src="assets/icon/whatsapp (1).png" alt="Phone Call" class="w-5 h-5"> 0812-3456-7890</div>
         </a>
         <a href="#" class="rounded-3xl" data-aos="fade-right" data-aos-offset="25">
-          <div class="container-address border-2 rounded-3xl p-4 flex gap-2 items-center text-base mb-10"><img
+          <div class="container-address border-2 rounded-3xl p-4 flex gap-2 items-center text-base mb-10 md:text-lg"><img
               src="assets/icon/location.png" alt="Phone Call" class="w-5 h-5"> Jl. Cendana No. 45, Bandung, Jawa Barat
             40115</div>
         </a>
@@ -330,24 +210,24 @@
       <div class="">
         <h1 class="text-3xl font-bold text-center mb-4">Sosial Media</h1>
         <a href="#" class="w-full" data-aos="fade-left" data-aos-offset="25">
-          <div class="container-telp px-4 mb-4 flex gap-2 items-center text-base"><img src="assets/icon/instagram.png"
+          <div class="container-telp px-4 mb-4 flex gap-2 items-center text-base md:text-lg"><img src="assets/icon/instagram.png"
               alt="Instagram" class="w-6 h-6">@savanadigital</div>
         </a>
         <a href="#" class="w-full" data-aos="fade-right" data-aos-offset="25">
-          <div class="container-telp px-4 mb-4 flex gap-2 items-center text-base"><img src="assets/icon/tik-tok.png"
+          <div class="container-telp px-4 mb-4 flex gap-2 items-center text-base md:text-lg"><img src="assets/icon/tik-tok.png"
               alt="Tiktok" class="w-6 h-6">@savanadigital</div>
         </a>
         <a href="#" class="w-full" data-aos="fade-left" data-aos-offset="25">
-          <div class="container-telp px-4 mb-4 flex gap-2 items-center text-base"><img src="assets/icon/twitter.png"
+          <div class="container-telp px-4 mb-4 flex gap-2 items-center text-base md:text-lg"><img src="assets/icon/twitter.png"
               alt="Twitter" class="w-6 h-6">@savanadigital</div>
         </a>
       </div>
     </div>
 
     <div class="p-10 !bg-violet-900 text-center">
-      <h1 class="mb-1 text-lg font-bold text-white">SAVANA DIGITAL STUDIO</h1>
-      <h2 class="mb-4 text-base font-semibold text-white">Desain Cerdas <br> Solusi Digital Berkualitas</h2>
-      <h1 class="text-base font-semibold text-white">© 2025 Trino Studio. All rights reserved.</h1>
+      <h1 class="mb-1 text-lg font-bold text-white md:text-xl">SAVANA DIGITAL STUDIO</h1>
+      <h2 class="mb-4 text-base font-semibold text-white md:text-lg">Desain Cerdas <br> Solusi Digital Berkualitas</h2>
+      <h1 class="text-sm font-semibold text-white md:text-base">© 2025 Trino Studio. All rights reserved.</h1>
     </div>
 
   </div>
