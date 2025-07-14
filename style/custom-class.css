@@ -1,10 +1,16 @@
 @media only screen and (min-width: 768px) {
-  .md-arrow{
+  .md-arrow {
     width: 1.65rem;
     height: 1.65rem;
   }
 
-  .md-text-xl{
+  .md-text-xl {
     font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .grid-cols-3-custom {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
