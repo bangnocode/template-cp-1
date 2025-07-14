@@ -73,19 +73,19 @@
           Untuk Usaha Anda Agar Customer Anda Tertarik</h2>
         <div class="flex justify-center">
           <a href="#layanan-kami"
-            class="!bg-violet-700 border-white border font-medium text-base py-4 px-6 rounded-lg flex items-center gap-4 w-max ">Lihat
+            class="!bg-violet-700 border-white border font-medium text-base py-4 px-6 rounded-lg flex items-center gap-2 w-max ">Lihat
             Detail <img src="assets/icon/next.png" alt="Next Icon"
-              class="w-5 h-5 invert brightness-0 animate-bounce md-arrow"></a>
+              class="w-5 h-5 invert brightness-0 animate-bounce md-arrow md:p-1"></a>
         </div>
       </div>
     </div>
 
 
     <br id="layanan-kami">
-    <div class="p-10 md:px-32 xl:px-52">
+    <div class="p-10 sm:px-24 md:px-24 xl:px-52">
       <h1 class="text-center font-bold text-3xl mb-3 md:text-4xl">Layanan Kami</h1>
       <h2 class="text-center font-medium text-base mb-10 md:text-xl">Layanan Jasa Yang kami Sediakan</h2>
-      <div class="container-product grid grid-cols-1 gap-12 grid-cols-3-custom">
+      <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 
         <!-- PRODUCT 1 -->
         <div class="card-product bg-white rounded-xl border-2 border-blue-900 pb-8" data-aos="fade-up"
@@ -144,8 +144,9 @@
         <!-- CLOSE PRODUCT 1 -->
 
         <!-- PRODUCT 1 -->
-        <div class="card-product bg-white rounded-xl border-2 border-blue-900 pb-8" data-aos="fade-up"
-          data-aos-offset="25">
+        <div class="card-product bg-white rounded-xl border-2 border-blue-900 pb-8 
+  md:col-span-2 md:mx-36 
+  lg:col-span-1 lg:col-start-auto lg:mx-0" data-aos="fade-up" data-aos-offset="25">
           <div class="container-name-product bg-blue-900 px-8 py-6 rounded-t-lg text-center text-white">
             <h1 class="text-2xl"><b>Desain Logo</b></h1>
           </div>
@@ -176,10 +177,11 @@
 
 
     <br id="tentang-kami">
-    <div class="px-10 py-20 !bg-[url(./img/background.png)] bg-no-repeat bg-cover bg-right md:px-24">
+    <div class="px-12 py-20 !bg-[url(./img/background.png)] bg-no-repeat bg-cover bg-right md:px-28">
       <h1 class="mb-12 font-bold text-3xl text-center md:text-4xl text-white">Tentang Kami</h1>
-      <div class="container-about-us text-white grid grid-cols-1 items-center justify-center lg:grid-cols-2">
-        <h1 class="text-base md:text-lg xl:ps-32" data-aos="fade-right" data-aos-offset="25"><span class="font-bold">Savana
+      <div class="container-about-us text-white grid grid-cols-1 items-center justify-center gap-16 lg:grid-cols-2">
+        <h1 class="text-base md:text-lg xl:ps-32" data-aos="fade-right" data-aos-offset="25"><span
+            class="font-bold">Savana
             Digital
             Studio</span> adalah
           perusahaan kreatif yang
@@ -187,12 +189,18 @@
           pada layanan desain
           grafis
           profesional dan branding visual untuk UMKM, startup, hingga perusahaan menengah. Kami
-          membantu klien membangun identitas visual yang kuat dan kehadiran online yang efektif. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque veniam maiores aliquam dolorem praesentium officiis modi repellendus fugit vitae odio enim, magnam ipsa impedit facere suscipit, et nobis nulla?</h1>
-        <div class="grid grid-cols-2 gap-3 md:px-12 xl:px-28">
-          <img src="img/kantor-kecil.png" alt="Kantor" class="w-full rounded-bl-3xl rounded-tr-3xl" data-aos="fade-right" data-aos-offset="25">
-          <img src="img/kantor-kecil.png" alt="Kantor" class="w-full rounded-br-3xl rounded-tl-3xl" data-aos="fade-right" data-aos-offset="25">
-          <img src="img/kantor-kecil.png" alt="Kantor" class="w-full rounded-br-3xl rounded-tl-3xl" data-aos="fade-right" data-aos-offset="25">
-          <img src="img/kantor-kecil.png" alt="Kantor" class="w-full rounded-bl-3xl rounded-tr-3xl" data-aos="fade-right" data-aos-offset="25">
+          membantu klien membangun identitas visual yang kuat dan kehadiran online yang efektif. Lorem ipsum dolor sit
+          amet, consectetur adipisicing elit. Delectus eaque veniam maiores aliquam dolorem praesentium officiis modi
+          repellendus fugit vitae odio enim, magnam ipsa impedit facere suscipit, et nobis nulla?</h1>
+        <div class="grid grid-cols-2 gap-3 sm:px-24 lg:px-6 px-16-custom-image-about-us">
+          <img src="img/kantor-kecil.png" alt="Kantor" class="w-full rounded-bl-3xl rounded-tr-3xl"
+            data-aos="fade-right" data-aos-offset="25">
+          <img src="img/kantor-kecil.png" alt="Kantor" class="w-full rounded-br-3xl rounded-tl-3xl"
+            data-aos="fade-right" data-aos-offset="25">
+          <img src="img/kantor-kecil.png" alt="Kantor" class="w-full rounded-br-3xl rounded-tl-3xl"
+            data-aos="fade-right" data-aos-offset="25">
+          <img src="img/kantor-kecil.png" alt="Kantor" class="w-full rounded-bl-3xl rounded-tr-3xl"
+            data-aos="fade-right" data-aos-offset="25">
         </div>
       </div>
     </div>
@@ -203,9 +211,91 @@
       <h2 class="font-medium text-base mb-10 text-center md:text-xl md:px-32">Pendapat Mereka Yang Sudah Menggunakan
         Layanan Jasa Kami</h2>
 
-      <div class="flex-col flex gap-y-8 md:px-20">
+      <div class="grid grid-cols-1 gap-8 md:px-20 lg:grid-cols-3">
 
-        <div class="review-1 border rounded-lg p-4 items-center" data-aos="fade-up-right" data-aos-offset="25">
+        <div class="review-1 border rounded-lg p-5 items-center" data-aos="fade-up-right" data-aos-offset="25">
+          <div class="mb-4">
+            <h1 class="font-medium text-base">
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, odit porro autem reprehenderit"
+            </h1>
+          </div>
+          <div class="flex">
+            <img src="img/icon-user.png" alt="Icon User" class="w-10 rounded-full h-10">
+            <div class="">
+              <h1 class="ms-1 font-bold text-base">Username1</h1>
+              <div class="bintang-rating flex">
+                <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor" viewBox="0 0 22 20">
+                  <path
+                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                </svg>
+                <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor" viewBox="0 0 22 20">
+                  <path
+                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                </svg>
+                <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor" viewBox="0 0 22 20">
+                  <path
+                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                </svg>
+                <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor" viewBox="0 0 22 20">
+                  <path
+                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                </svg>
+                <svg class="w-4 h-4 ms-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor" viewBox="0 0 22 20">
+                  <path
+                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-1 border rounded-lg p-5 items-center" data-aos="fade-up-right" data-aos-offset="25">
+          <div class="mb-4">
+            <h1 class="font-medium text-base">
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, odit porro autem reprehenderit"
+            </h1>
+          </div>
+          <div class="flex">
+            <img src="img/icon-user.png" alt="Icon User" class="w-10 rounded-full h-10">
+            <div class="">
+              <h1 class="ms-1 font-bold text-base">Username1</h1>
+              <div class="bintang-rating flex">
+                <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor" viewBox="0 0 22 20">
+                  <path
+                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                </svg>
+                <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor" viewBox="0 0 22 20">
+                  <path
+                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                </svg>
+                <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor" viewBox="0 0 22 20">
+                  <path
+                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                </svg>
+                <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor" viewBox="0 0 22 20">
+                  <path
+                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                </svg>
+                <svg class="w-4 h-4 ms-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor" viewBox="0 0 22 20">
+                  <path
+                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-1 border rounded-lg p-5 items-center" data-aos="fade-up-right" data-aos-offset="25">
           <div class="mb-4">
             <h1 class="font-medium text-base">
               "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, odit porro autem reprehenderit"
@@ -249,7 +339,7 @@
     </div>
 
 
-    <div class="px-10 py-20 md:px-32" id="kontak">
+    <div class="px-10 py-20 md:px-32 lg:px-44 xl:px-64" id="kontak">
       <div class="appear-bottom-to-top">
         <h1 class="text-3xl font-bold text-center mb-4 md:text-4xl">Ada Pertanyaan?</h1>
         <h1 class="text-base text-center font-medium mb-8 md:text-xl">Hubungi Kontak Admin Yang Tersedia Ada Di Bawah.
@@ -264,13 +354,15 @@
         </a>
         <a href="#" class="rounded-3xl" data-aos="fade-left" data-aos-offset="25">
           <div class="container-whatsapp border-2 rounded-3xl p-4 mb-4 flex gap-2 items-center text-base md:text-lg">
-            <img src="assets/icon/whatsapp (1).png" alt="Phone Call" class="w-5 h-5"> 0812-3456-7890</div>
+            <img src="assets/icon/whatsapp (1).png" alt="Phone Call" class="w-5 h-5"> 0812-3456-7890
+          </div>
         </a>
         <a href="#" class="rounded-3xl" data-aos="fade-right" data-aos-offset="25">
           <div class="container-address border-2 rounded-3xl p-4 flex gap-2 items-center text-base mb-10 md:text-lg">
             <img src="assets/icon/location.png" alt="Phone Call" class="w-5 h-5"> Jl. Cendana No. 45, Bandung, Jawa
             Barat
-            40115</div>
+            40115
+          </div>
         </a>
       </div>
 
