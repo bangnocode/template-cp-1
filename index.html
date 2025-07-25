@@ -20,38 +20,47 @@
 
 </head>
 
-<body class="overflow-x-hidden antialiased" style="scroll-behavior: smooth;">
+<body style="scroll-behavior: smooth;">
   <div class="container-body">
 
-    <!-- Navbar -->
-    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 bg-transparent transition-colors duration-300">
-      <div class="max-w-screen-xl mx-auto flex items-center justify-between p-4">
-        <a href="#" class="flex items-center space-x-3">
+    <nav class="bg-purple-950 fixed z-20 top-0 start-0 w-full">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="img/logo.png" class="h-8" alt="Savana Logo" />
-          <span class="text-lg font-semibold text-white">Savana Digital Studio</span>
+          <span class="self-center text-lg font-semibold whitespace-nowrap text-white">Savana Digital Studio</span>
         </a>
-        <!-- Mobile toggle -->
-        <button id="nav-toggle" class="md:hidden p-2 text-white focus:outline-none">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        <button data-collapse-toggle="navbar-default" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white md:hidden"
+          aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
           </svg>
         </button>
-        <!-- Menu -->
-        <div id="nav-menu" class="hidden md:flex space-x-8 items-center">
-          <a href="#home" class="text-white hover:text-gray-300 font-medium">Home</a>
-          <a href="#layanan-kami" class="text-white hover:text-gray-300 font-medium">Layanan</a>
-          <a href="#tentang-kami" class="text-white hover:text-gray-300 font-medium">Tentang Kami</a>
-          <a href="#kontak" class="text-white hover:text-gray-300 font-medium">Kontak</a>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 border-t-white border-t">
+            <li>
+              <a href="#home"
+                class="block py-2 px-3 text-white rounded-sm md:bg-transparent md:p-0 "
+                aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="#layanan-kami"
+                class="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0">Layanan</a>
+            </li>
+            <li>
+              <a href="#tentang-kami"
+                class="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0">Tentang
+                Kami</a>
+            </li>
+            <li>
+              <a href="#kontak"
+                class="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0">Kontak</a>
+            </li>
+          </ul>
         </div>
-      </div>
-      <!-- Mobile menu container -->
-      <div id="mobile-menu" class="hidden md:hidden">
-        <ul class="bg-purple-900 px-8 pb-4 space-y-2">
-          <li><a href="#home" class="block py-2 text-white">Home</a></li>
-          <li><a href="#layanan-kami" class="block py-2 text-white">Layanan</a></li>
-          <li><a href="#tentang-kami" class="block py-2 text-white">Tentang Kami</a></li>
-          <li><a href="#kontak" class="block py-2 text-white">Kontak</a></li>
-        </ul>
       </div>
     </nav>
 
@@ -66,7 +75,7 @@
           Untuk Usaha Anda Agar Customer Anda Tertarik</h2>
         <div class="flex justify-center">
           <a href="#layanan-kami"
-            class="!bg-transparent border-white border font-medium text-base py-4 px-8 rounded-full flex items-center gap-2 w-max ">Lihat
+            class="!bg-transparent border-white border font-medium text-base py-4 px-6 rounded-full flex items-center gap-2 w-max ">Lihat
             Detail <img src="assets/icon/next.png" alt="Next Icon"
               class="w-5 h-5 invert brightness-0 animate-bounce md-arrow md:p-1"></a>
         </div>
@@ -358,26 +367,25 @@
           </div>
         </a>
       </div>
-
-      <div class="">
-        <h1 class="text-3xl font-bold text-center mb-4">Sosial Media</h1>
-        <a href="#" class="w-full" data-aos="fade-left" data-aos-offset="25">
-          <div class="container-telp px-4 mb-4 flex gap-2 items-center text-base md:text-lg"><img
+      <h1 class="text-3xl font-bold text-center mb-8">Sosial Media</h1>
+      <div class="grid grid-cols-1 md:grid-cols-3">
+        <a href="#" class="w-full" data-aos="fade-right" data-aos-offset="25">
+          <div class="container-telp px-4 mb-4 flex gap-2 items-center justify-center text-base md:text-lg"><img
               src="assets/icon/instagram.png" alt="Instagram" class="w-6 h-6">@savanadigital</div>
         </a>
-        <a href="#" class="w-full" data-aos="fade-right" data-aos-offset="25">
-          <div class="container-telp px-4 mb-4 flex gap-2 items-center text-base md:text-lg"><img
+        <a href="#" class="w-full" data-aos="fade-up" data-aos-offset="25">
+          <div class="container-telp px-4 mb-4 flex gap-2 items-center justify-center text-base md:text-lg"><img
               src="assets/icon/tik-tok.png" alt="Tiktok" class="w-6 h-6">@savanadigital</div>
         </a>
         <a href="#" class="w-full" data-aos="fade-left" data-aos-offset="25">
-          <div class="container-telp px-4 mb-4 flex gap-2 items-center text-base md:text-lg"><img
+          <div class="container-telp px-4 mb-4 flex gap-2 items-center justify-center text-base md:text-lg"><img
               src="assets/icon/twitter.png" alt="Twitter" class="w-6 h-6">@savanadigital</div>
         </a>
       </div>
     </div>
 
 
-    <div class="p-10 !bg-violet-900 text-center">
+    <div class="p-10 !bg-purple-950 text-center">
       <h1 class="mb-1 text-lg font-bold text-white md:text-xl">SAVANA DIGITAL STUDIO</h1>
       <h2 class="mb-4 text-base font-semibold text-white md:text-lg">Desain Cerdas <br> Solusi Digital Berkualitas</h2>
       <h1 class="text-sm font-semibold text-white md:text-base">© 2025 Trino Studio. All rights reserved.</h1>
@@ -388,46 +396,26 @@
 
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
   <script>
-    AOS.init();
-    const navbar = document.getElementById('navbar');
-    const navToggle = document.getElementById('nav-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    // Scroll handler
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 25) {
-        navbar.classList.add('bg-purple-900', 'shadow-lg');
-        navbar.classList.remove('bg-transparent', 'shadow-lg');
-      } else {
-        navbar.classList.remove('bg-purple-900', 'shadow-lg');
-      }
+    AOS.init({
+      //once: true, // animasi hanya terjadi sekali
     });
+    // Ambil elemen toggle dan menu
+    const toggleButton = document.querySelector('[data-collapse-toggle]');
+    const navMenu = document.getElementById('navbar-default');
 
-    // Mobile toggle handler
-    navToggle.addEventListener('click', (e) => {
+    // Toggle menu saat tombol diklik
+    toggleButton.addEventListener('click', function (e) {
       e.stopPropagation();
-      const isOpen = mobileMenu.classList.toggle('hidden');
-      if (!isOpen) {
-        // menu opened: ensure navbar stays purple
-        navbar.classList.add('bg-purple-900', 'shadow-lg');
-      } else {
-        // menu closed: revert based on scroll
-        if (window.scrollY < 50) {
-          navbar.classList.remove('bg-purple-900', 'shadow-lg');
-        }
-      }
+      navMenu.classList.toggle('hidden');
     });
 
-    // Click outside to close mobile menu
-    document.addEventListener('click', (e) => {
-      if (!mobileMenu.contains(e.target) && !navToggle.contains(e.target)) {
-        if (!mobileMenu.classList.contains('hidden')) {
-          mobileMenu.classList.add('hidden');
-          if (window.scrollY < 50) {
-            navbar.classList.remove('bg-purple-900', 'shadow-lg');
-          }
-        }
+    // Tutup menu jika klik di luar
+    document.addEventListener('click', function (e) {
+      const isClickInside = navMenu.contains(e.target) || toggleButton.contains(e.target);
+      if (!isClickInside && !navMenu.classList.contains('hidden')) {
+        navMenu.classList.add('hidden');
       }
     });
   </script>
