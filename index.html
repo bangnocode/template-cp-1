@@ -23,7 +23,7 @@
 <body style="scroll-behavior: smooth;">
   <div class="container-body">
 
-    <nav class="bg-purple-950 fixed z-20 top-0 start-0 w-full">
+    <nav id="main-navbar" class="fixed z-20 top-0 start-0 w-full transition-colors duration-100 bg-transparent">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="img/logo.png" class="h-8" alt="Savana Logo" />
@@ -74,7 +74,7 @@
           Untuk Usaha Anda Agar Customer Anda Tertarik</h2>
         <div class="flex justify-center">
           <a href="#layanan-kami"
-            class="!bg-transparent border-white border font-medium text-base py-4 px-6 rounded-full flex items-center gap-2 w-max ">Lihat
+            class="!bg-transparent backdrop-blur-sm border-white border font-medium text-base py-4 px-6 rounded-full flex items-center gap-2 w-max ">Lihat
             Detail <img src="assets/icon/next.png" alt="Next Icon"
               class="w-5 h-5 invert brightness-0 animate-bounce md-arrow md:p-1"></a>
         </div>
@@ -403,24 +403,40 @@
     AOS.init({
       //once: true, // animasi hanya terjadi sekali
     });
-    // Ambil elemen toggle dan menu
+    const navbar = document.getElementById("main-navbar");
     const toggleButton = document.querySelector('[data-collapse-toggle]');
     const navMenu = document.getElementById('navbar-default');
 
-    // Toggle menu saat tombol diklik
-    toggleButton.addEventListener('click', function (e) {
-      e.stopPropagation();
-      navMenu.classList.toggle('hidden');
+    // Fungsi untuk update background navbar
+    function updateNavbarBg() {
+      const isScrolled = window.scrollY > 10;
+      const isMenuOpen = !navMenu.classList.contains('hidden');
+      const isMobile = window.innerWidth < 768;
+
+      if (isScrolled || (isMobile && isMenuOpen)) {
+        navbar.classList.remove("bg-transparent");
+        navbar.classList.add("bg-purple-950");
+      } else {
+        navbar.classList.remove("bg-purple-950");
+        navbar.classList.add("bg-transparent");
+      }
+    }
+
+    // Jalankan saat scroll
+    window.addEventListener("scroll", updateNavbarBg);
+
+    // Jalankan saat hamburger menu diklik
+    toggleButton.addEventListener("click", function () {
+      setTimeout(updateNavbarBg, 10); // beri waktu supaya class .hidden sempat berubah
     });
 
-    // Tutup menu jika klik di luar
-    document.addEventListener('click', function (e) {
-      const isClickInside = navMenu.contains(e.target) || toggleButton.contains(e.target);
-      if (!isClickInside && !navMenu.classList.contains('hidden')) {
-        navMenu.classList.add('hidden');
-      }
-    });
+    // Jalankan juga saat resize window
+    window.addEventListener("resize", updateNavbarBg);
+
+    // Jalankan saat pertama load
+    window.addEventListener("load", updateNavbarBg);
   </script>
+
 
 </body>
 
